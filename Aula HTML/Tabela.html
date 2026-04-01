@@ -1,0 +1,88 @@
+<!--
+<table></table> define a tabela
+<caption> legenda da tabela
+<tr></tr>adiciona na tabela
+<th></th>adiciona uma célula de cabeçalho texto negrito
+<td></ adiciona uma célula de dado comum alinha a esquerda
+
+<thead></thead> cabeçalho da tabela
+<tbody></tbody> corpo da tabela
+<tfoot></tfoot> rodapé da tabela
+
+    -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Estilo da Tabela*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 10px;
+        }
+        caption {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        th,td {
+            border: 1px solid #000;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th{
+            background-color: #ec6969;
+        }
+        tfoot td {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+    <table>
+        <caption>Cadastro de clientes</caption>
+        <thead>
+            <tr>
+                <th>Nome:</th>
+                <th>Email:</th>
+                <th>Telefone:</th>
+                <th>Cargo:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Luis</td>
+                <td>Luis@gmail.com</td>
+                <td> (11) 954705764<td>
+                <td>Desenvolvedor Web</td>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>Luis@gmail.com</td>
+                <td> (11) 954705764<td>
+                <td>Desenvolvedor Web</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3"></td>
+            <td>Total 2</td>
+        </tr>
+       
+        </tfoot>
+    </table>
+    
+</body>
+</html>
+    
